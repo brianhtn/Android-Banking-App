@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OceanBank</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bank_name">Ocean\'s 10 Bank</string>
+    <string name="username_title">Username:</string>
+    <string name="password_title">Password:</string>
+    <string name="enter_user_here">Enter Username Here</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in_text">SIGN IN</string>
+    <string name="no_account">Don\'t have an account with us?</string>
+    <string name="suggestion">Sign up today!</string>
+    <string name="sign_up_button">SIGN UP</string>
+    <string name="title_activity_signup">Sign Up Page</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="pid">Student ID:</string>
+    <string name="pid_title">Personal ID:</string>
+    <string name="email_title">Email:</string>
+    <string name="phone">Phone:</string>
+    <string name="john">John</string>
+    <string name="doe">Doe</string>
+    <string name="sample_id">A10175486</string>
+    <string name="sample_phone">8185550123</string>
+    <string name="sample_phone2">(818) 555-0123</string>
+    <string name="address_title">Address:</string>
+    <string name="nextbutton1">NEXT</string>
+    <string name="title_activity_signup_next">Signup Next Page</string>
+    <string name="new_signin_title">Choose new sign-in information:</string>
+    <string name="confirm_password_title">Confirm Password:</string>
+    <string name="security_question_title">Security Question:</string>
+    <string name="security_answer_title">Security Answer:</string>
+    <string name="nextbutton2">NEXT</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+
+    <string-array name="accType">
+        <item>Select One</item>
+        <item>Checkings</item>
+        <item>Savings</item>
+    </string-array>
+
+    <string name="title_activity_withdraw">WithdrawActivity</string>
+    <string name="title_activity_deposit">DepositActivity</string>
+
+    <string-array name="month_spinner">
+        <item>Select One</item>
+        <item>01 - January</item>
+        <item>02 - February</item>
+        <item>03 - March</item>
+        <item>04 - April</item>
+        <item>05 - May</item>
+        <item>06 - June</item>
+        <item>07 - July</item>
+        <item>08 - August</item>
+        <item>09 - September</item>
+        <item>10 - October</item>
+        <item>11 - November</item>
+        <item>12 - December</item>
+    </string-array>
+    <string-array name="year_spinner">
+        <item>Select One</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+        <item>1969</item>
+        <item>1968</item>
+        <item>1967</item>
+        <item>1966</item>
+        <item>1965</item>
+        <item>1964</item>
+        <item>1963</item>
+        <item>1962</item>
+        <item>1961</item>
+        <item>1960</item>
+        <item>1959</item>
+        <item>1958</item>
+        <item>1957</item>
+        <item>1956</item>
+        <item>1955</item>
+        <item>1954</item>
+        <item>1953</item>
+        <item>1952</item>
+        <item>1951</item>
+        <item>1950</item>
+        <item>1949</item>
+        <item>1948</item>
+        <item>1947</item>
+        <item>1946</item>
+        <item>1945</item>
+        <item>1944</item>
+        <item>1943</item>
+        <item>1942</item>
+        <item>1941</item>
+        <item>1940</item>
+        <item>1939</item>
+        <item>1938</item>
+        <item>1937</item>
+        <item>1936</item>
+        <item>1935</item>
+        <item>1934</item>
+        <item>1933</item>
+        <item>1932</item>
+        <item>1931</item>
+        <item>1930</item>
+        <item>1929</item>
+        <item>1928</item>
+        <item>1927</item>
+        <item>1926</item>
+        <item>1925</item>
+        <item>1924</item>
+        <item>1923</item>
+        <item>1922</item>
+        <item>1921</item>
+        <item>1920</item>
+        <item>1919</item>
+        <item>1918</item>
+        <item>1917</item>
+        <item>1916</item>
+        <item>1915</item>
+    </string-array>
+    <string-array name="question_spinner">
+        <item>Select One</item>
+        <item>What is your favorite book or movie? </item>
+        <item>What was the model of your first car? </item>
+        <item>What is your favorite type of beverage? </item>
+        <item>What was the name of your first pet? </item>
+        <item>Who is your favorite celebrity? </item>
+    </string-array>
+    <string-array name="transfer_from">
+        <item>Select One</item>
+        <item>Checkings</item>
+        <item>Savings</item>
+    </string-array>
+    <string-array name="transfer_to">
+        <item>Select One</item>
+        <item>Checkings</item>
+        <item>Savings</item>
+    </string-array>
+
+    <string name="title_activity_transfer_account">TransferAccountActivity</string>
+    <string name="title_activity_transfer_user">TransferUserActivity</string>
+    <string name="title_activity_close_specific_account">CloseSpecificAccountActivity</string>
+    <string name="title_activity_admin_login">AdminLoginActivity</string>
+    <string name="title_activity_access_account">AccessAccountActivity</string>
+    <string name="title_activity_create_admin">CreateAdminActivity</string>
+    <string name="title_activity_transaction_history">TransactionHistoryActivity</string>
+    <string name="title_activity_view_all_accounts">ViewAllAccountsActivity</string>
+    <string name="title_activity_confirm_security">ConfirmSecurityActivity</string>
+    <string name="title_activity_edit_account">EditAccountActivity</string>
+    <string name="title_activity_create_specific_account">CreateSpecificAccountActivity</string>
+    <string name="title_activity_birthday">BirthdayActivity</string>
+
+</resources>

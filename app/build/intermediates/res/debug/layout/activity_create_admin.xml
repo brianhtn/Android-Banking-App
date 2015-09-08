@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.banksite.oceanbank.CreateAdminActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/new_sign_in_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:text="@string/new_signin_title" />
+
+    <TextView
+        android:id="@+id/new_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_sign_in_info_title"
+        android:layout_alignStart="@+id/new_sign_in_info_title"
+        android:layout_below="@+id/new_sign_in_info_title"
+        android:layout_marginTop="25dp"
+        android:text="@string/username_title" />
+
+    <EditText
+        android:id="@+id/new_username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/new_user_title"
+        android:layout_alignBottom="@+id/new_user_title"
+        android:layout_alignLeft="@+id/new_password_field"
+        android:layout_alignStart="@+id/new_password_field"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/new_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_user_title"
+        android:layout_alignStart="@+id/new_user_title"
+        android:layout_below="@+id/new_username_field"
+        android:layout_marginTop="40dp"
+        android:text="@string/password_title" />
+
+    <EditText
+        android:id="@+id/new_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/new_password_title"
+        android:layout_alignBottom="@+id/new_password_title"
+        android:layout_alignLeft="@+id/confirm_password_field"
+        android:layout_alignStart="@+id/confirm_password_field"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirm_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_password_title"
+        android:layout_alignStart="@+id/new_password_title"
+        android:layout_below="@+id/new_password_field"
+        android:layout_marginTop="40dp"
+        android:text="@string/confirm_password_title" />
+
+    <EditText
+        android:id="@+id/confirm_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/confirm_password_title"
+        android:layout_alignBottom="@+id/confirm_password_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/confirm_password_title"
+        android:layout_toRightOf="@+id/confirm_password_title"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirm_password_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirm_password_title"
+        android:layout_alignStart="@+id/confirm_password_title"
+        android:layout_alignEnd="@+id/confirm_password_field"
+        android:layout_alignRight="@+id/confirm_password_field"
+        android:layout_below="@+id/confirm_password_title"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_admin_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/confirm_password_message"
+        android:layout_marginTop="30dp"
+        android:text="CREATE ADMINISTRATOR"/>
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/Users/j.keifer/Desktop/CSE110-Ocean-s-10/OceanBank1/app/src/main/res/layout/activity_create_admin.xml -->

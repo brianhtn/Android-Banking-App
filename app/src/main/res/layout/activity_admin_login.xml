@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.banksite.oceanbank.AdminLoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hello_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:text="Hello, Admin"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_username_title"
+        android:layout_alignLeft="@+id/hello_title"
+        android:layout_alignStart="@+id/hello_title"
+        android:layout_below="@+id/hello_title"
+        android:layout_marginTop="30dp"
+        android:text="Enter username:"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_field"
+        android:layout_alignLeft="@+id/enter_username_title"
+        android:layout_alignStart="@+id/enter_username_title"
+        android:layout_below="@+id/enter_username_title"
+        android:layout_marginTop="10dp"
+        android:inputType="textVisiblePassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_username"
+        android:layout_alignLeft="@+id/username_field"
+        android:layout_alignStart="@+id/username_field"
+        android:layout_below="@+id/username_field"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/access_acct_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/confirm_username"
+        android:layout_marginTop="20dp"
+        android:text="ACCESS ACCOUNTS" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_admin_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view_all_acct_button"
+        android:layout_marginTop="20dp"
+        android:text="CREATE NEW ADMIN" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_out_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/create_admin_button"
+        android:layout_marginTop="20dp"
+        android:text="SIGN OUT" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW ALL ACCOUNTS"
+        android:id="@+id/view_all_acct_button"
+        android:layout_below="@+id/access_acct_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
+</ScrollView>

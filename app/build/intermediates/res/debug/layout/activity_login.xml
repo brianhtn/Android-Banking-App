@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.banksite.oceanbank.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hello, person."
+        android:id="@+id/greeting"
+        android:layout_marginTop="50dp"
+        android:hint="Hello, person."
+        android:layout_below="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="EMAIL"
+        android:id="@+id/personalID"
+        android:layout_below="@+id/greeting"
+        android:layout_alignLeft="@+id/greeting"
+        android:layout_alignStart="@+id/greeting" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PHONE"
+        android:id="@+id/Phone"
+        android:layout_below="@+id/personalID"
+        android:layout_alignLeft="@+id/personalID"
+        android:layout_alignStart="@+id/personalID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ADDRESS"
+        android:id="@+id/Address"
+        android:layout_below="@+id/Phone"
+        android:layout_alignLeft="@+id/Phone"
+        android:layout_alignStart="@+id/Phone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/logAcc"
+        android:layout_below="@+id/Address"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/Address"
+        android:layout_alignStart="@+id/Address"
+        android:layout_alignRight="@+id/tranHist"
+        android:layout_alignEnd="@+id/tranHist" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/accBal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logAcc"
+        android:layout_alignLeft="@+id/logAcc"
+        android:layout_alignStart="@+id/logAcc"
+        android:layout_alignRight="@+id/tranHist"
+        android:layout_alignEnd="@+id/tranHist" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRANSACTION HISTORY"
+        android:id="@+id/tranHist"
+        android:layout_below="@+id/accBal"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USER TRANSFER"
+        android:id="@+id/user_transfer_button"
+        android:layout_below="@+id/tranHist"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT TRANSFER"
+        android:id="@+id/account_transfer_button"
+        android:layout_below="@+id/user_transfer_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOSE ACCOUNTS"
+        android:id="@+id/close_account_button"
+        android:layout_below="@+id/account_transfer_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOSE SPECIFIC ACCOUNT"
+        android:id="@+id/delete_specific_button"
+        android:layout_below="@+id/close_account_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_specific_acct_button"
+        android:text="CREATE SPECIFIC ACCOUNT"
+        android:layout_below="@+id/delete_specific_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT INFORMATION"
+        android:id="@+id/edit_info_button"
+        android:layout_below="@+id/create_specific_acct_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN OUT"
+        android:id="@+id/sign_out_button"
+        android:layout_below="@+id/edit_info_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/Users/j.keifer/Desktop/CSE110-Ocean-s-10/OceanBank1/app/src/main/res/layout/activity_login.xml -->

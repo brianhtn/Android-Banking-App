@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.banksite.oceanbank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.banksite.oceanbank.MainActivity"
+            android:label="Ocean Bank" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.SignupActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.SignupNextActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.SignupActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.SignupActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.LoginActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.CreateAccountActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.WithdrawActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.DepositActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.TransferAccountActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.TransferUserActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.CloseSpecificAccountActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.AdminLoginActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.AccessAccountActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.AdminLoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.AdminLoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.CreateAdminActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.AdminLoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.AdminLoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.TransactionHistoryActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.ViewAllAccountsActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.AdminLoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.AdminLoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.ConfirmSecurityActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.EditAccountActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.ConfirmSecurityActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.ConfirmSecurityActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.CreateSpecificAccountActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.banksite.oceanbank.BirthdayActivity"
+            android:label=""
+            android:parentActivityName="com.banksite.oceanbank.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.banksite.oceanbank.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

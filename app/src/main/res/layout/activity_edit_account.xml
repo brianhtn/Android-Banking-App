@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.banksite.oceanbank.EditAccountActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Update your new information:"/>
+
+    <TextView
+        android:id="@+id/new_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_username_title"
+        android:layout_alignStart="@+id/new_username_title"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:text="New Password:" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/new_password_title"
+        android:layout_alignBottom="@+id/new_password_title"
+        android:layout_alignLeft="@+id/new_password_confirm"
+        android:layout_alignStart="@+id/new_password_confirm"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirm_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_password_title"
+        android:layout_alignStart="@+id/new_password_title"
+        android:layout_below="@+id/new_password"
+        android:layout_marginTop="40dp"
+        android:text="@string/confirm_password_title" />
+
+    <EditText
+        android:id="@+id/new_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/confirm_password_title"
+        android:layout_alignBottom="@+id/confirm_password_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/confirm_password_title"
+        android:layout_toRightOf="@+id/confirm_password_title"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/pw_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirm_password_title"
+        android:layout_alignStart="@+id/confirm_password_title"
+        android:layout_alignEnd="@+id/new_password_confirm"
+        android:layout_alignRight="@+id/new_password_confirm"
+        android:layout_below="@+id/new_password_confirm"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pw_accept"
+        android:layout_alignStart="@+id/pw_accept"
+        android:layout_below="@+id/pw_accept"
+        android:layout_marginTop="10dp"
+        android:text="New Phone Number:" />
+
+    <EditText
+        android:id="@+id/phoneField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone_title"
+        android:layout_alignBottom="@+id/phone_title"
+        android:layout_alignLeft="@+id/new_password_confirm"
+        android:layout_alignStart="@+id/new_password_confirm"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone_title"
+        android:layout_alignStart="@+id/phone_title"
+        android:layout_below="@+id/phoneField"
+        android:layout_marginTop="40dp"
+        android:text="New Address:" />
+
+    <EditText
+        android:id="@+id/address_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address_title"
+        android:layout_alignBottom="@+id/address_title"
+        android:layout_alignLeft="@+id/phoneField"
+        android:layout_alignStart="@+id/phoneField"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apply_button"
+        android:text="APPLY CHANGES"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/address_line1"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button"
+        android:text="BACK HOME"
+        android:layout_below="@+id/apply_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
+</ScrollView>
